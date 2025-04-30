@@ -3,9 +3,10 @@
 void *ft_memchr(const void *s, int c, size_t n)
 {
     int nbr;
-    char *point = s;
+    const char *point;
 
     nbr = 0;
+    point = s;
     while (nbr < n)
     {
         if (point[nbr] == c)

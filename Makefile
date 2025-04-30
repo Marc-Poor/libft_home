@@ -14,7 +14,14 @@ SRC     = 	main.c	\
 			ft_strncmp.c \
 			ft_memchr.c \
 			ft_memcmp.c \
-          	ft_atoi.c
+			ft_memcpy.c	\
+			ft_memmove.c	\
+			ft_strnstr.c	\
+          	ft_atoi.c	\
+			ft_putchar_fd.c	\
+			ft_putstr_fd.c	\
+			ft_putnbr_fd.c	\
+			ft_putendl_fd.c
 
 OBJ		=	$(SRC:.c=.o)
 

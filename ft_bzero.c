@@ -6,7 +6,7 @@ void ft_bzero(void *s, size_t n)
     char *point = s;
 
     nbr = 0;
-    while (nbr < n)
+    while (nbr < (int)n)
     {
         point[nbr] = 0;
         nbr++;

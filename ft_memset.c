@@ -3,10 +3,11 @@
 void *ft_memset(void *pointer, int value, size_t count)
 {
     int nbr;
-    char *point = pointer;
+    char *point;
 
     nbr = 0;
-    while (nbr < count)
+    point = pointer;
+    while (nbr < (int)count)
     {
         point[nbr] = (unsigned char)value;
         nbr++;
