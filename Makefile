@@ -1,5 +1,4 @@
-SRC     = 	main.c	\
-			ft_isalpha.c \
+SRC     =	ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isalnum.c \
 			ft_isascii.c \
@@ -25,12 +24,12 @@ SRC     = 	main.c	\
 
 OBJ		=	$(SRC:.c=.o)
 
-NAME	=	libft_test
+NAME	=	libft.a
 
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-			gcc -o $(NAME) $(OBJ)
+			ar rc $(NAME) $(OBJ)
 
 %.o:	%.c
 		gcc -c $< -std=gnu17 -Wall -Wextra
